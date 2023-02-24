@@ -44,12 +44,15 @@ public class SEstudio {
     }
     
     public void editEducacion(Estudio est) {
-        estudioRepo.delete(est);
         estudioRepo.save(est);
    }
     
-    public void save (Estudio exp){
-    estudioRepo.save(exp);
+    public void save (Estudio est){
+    estudioRepo.save(est);
+   }
+    
+   public void borrar(Estudio est){
+   estudioRepo.delete(est);
    }
     
     public void delete (int id){

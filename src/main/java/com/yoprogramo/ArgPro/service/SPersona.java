@@ -53,7 +53,9 @@ public class SPersona {
     persoRepo.save(perso);
     }
     
-    
+     public void editPersona(Persona per) {
+        persoRepo.save(per);
+   }
     
     public void borrarPersona (int id){
     persoRepo.deleteById(id);

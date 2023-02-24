@@ -30,6 +30,10 @@ public class SProyecto {
     proyectoRepo.save(proy);
     }
     
+    public void save (Proyecto proy){
+    proyectoRepo.save(proy);
+   }
+    
     public Optional<Proyecto> getOne(int id) {
     return proyectoRepo.findById(id);
     }
@@ -41,10 +45,6 @@ public class SProyecto {
      public void delete (int id){
     proyectoRepo.deleteById(id);
     }
-
-   public void save (Proyecto pro){
-   proyectoRepo.save(pro);
-   }
    
    public boolean existsById(int id){
     return proyectoRepo.existsById(id);
@@ -53,6 +53,10 @@ public class SProyecto {
     public void borrarProyecto (int id){
     proyectoRepo.deleteById(id);
     }
+    
+    public void editProyecto(Proyecto proy) {
+        proyectoRepo.save(proy);
+   }
 
    
     

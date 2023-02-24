@@ -60,10 +60,10 @@ public class CEstudio {
     }
     
    
-    @PutMapping("/editar/{id}")
+    @PostMapping("/editar/{id}")
     public ResponseEntity<?> update(@RequestBody Estudio est) {
             estudioServ.editEducacion(est);
-            return new ResponseEntity(new Mensaje("Persona modificada"), HttpStatus.OK);
+            return new ResponseEntity(new Mensaje("¡Estudio modificado!"), HttpStatus.OK);
         }
     }
 

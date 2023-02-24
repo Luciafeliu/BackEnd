@@ -40,6 +40,10 @@ public class SExperiencia {
     public void delete (int id){
     expRepo.deleteById(id);
     }
+    
+    public void borrar (Experiencia exp){
+    expRepo.delete(exp);
+    }
 
    public void save (Experiencia exp){
    expRepo.save(exp);

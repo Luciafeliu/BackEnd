@@ -55,9 +55,9 @@ public class CExperiencia {
     }
     
    
-    @PutMapping("/editar/{id}")
+    @PostMapping("/editar/{id}")
     public ResponseEntity<?> update(@RequestBody Experiencia exp) {
             expServ.editEducacion(exp);
-            return new ResponseEntity(new Mensaje("Experiencia modificada"), HttpStatus.OK);
+            return new ResponseEntity(new Mensaje("¡Experiencia modificada!"), HttpStatus.OK);
         }
     }

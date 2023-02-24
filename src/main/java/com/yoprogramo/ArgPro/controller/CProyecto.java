@@ -51,5 +51,19 @@ public class CProyecto {
         return new ResponseEntity(new Mensaje("Proyecto eliminado"), HttpStatus.OK);
     }
     
+    @GetMapping("/detail/{id}")
+    public ResponseEntity<Proyecto> getById(@PathVariable("id") int id){
+        if(!proyectoServ.existsById(id))
+            return new ResponseEntity(new Mensaje("no existe"), HttpStatus.NOT_FOUND);
+        Proyecto proyecto = proyectoServ.getOne(id).get();
+        return new ResponseEntity(proyecto, HttpStatus.OK);
+    }
     
-}
+    @PostMapping("/editar/{id}")
+    public ResponseEntity<?> update(@RequestBody Proyecto proy) {
+            proyectoServ.editProyecto(proy);
+            return new ResponseEntity(new Mensaje("¡Proyecto modificado!"), HttpStatus.OK);
+        }
+    }
+    
+    
