@@ -5,6 +5,7 @@ com\yoprogramo\ArgPro\controller\CBanner.class
 com\yoprogramo\ArgPro\controller\CEstudio.class
 com\yoprogramo\ArgPro\security\repository\iRolRepository.class
 com\yoprogramo\ArgPro\controller\CProyecto.class
+com\yoprogramo\ArgPro\security\dto\DtoEstudio.class
 com\yoprogramo\ArgPro\repository\RPersona.class
 com\yoprogramo\ArgPro\entity\Experiencia.class
 com\yoprogramo\ArgPro\entity\Estudio.class

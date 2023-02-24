@@ -7,7 +7,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -61,16 +60,12 @@ public class CEstudio {
     }
     
    
-    @PutMapping("/update/{id}")
-    public ResponseEntity<?> update(@PathVariable ("id") int it, @RequestBody Estudio est){
-        est.setDescripcion(est.getDescripcion());
-        est.setEstado(est.getEstado());
-        est.setFin(est.getFin());
-        est.setInicio(est.getInicio());
-        est.setInstitucion(est.getInstitucion());
-        est.setTitulo(est.getTitulo());
-        return new ResponseEntity(new Mensaje("Estudio modificado"), HttpStatus.OK);
+    @PutMapping("/editar/{id}")
+    public ResponseEntity<?> update(@RequestBody Estudio est) {
+            estudioServ.editEducacion(est);
+            return new ResponseEntity(new Mensaje("Persona modificada"), HttpStatus.OK);
+        }
     }
+
     
-    
-}
+

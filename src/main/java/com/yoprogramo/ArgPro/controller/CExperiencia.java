@@ -55,16 +55,9 @@ public class CExperiencia {
     }
     
    
-    @PutMapping("/update/{id}")
-    public ResponseEntity<?> update(@PathVariable ("id") int it, @RequestBody Experiencia exp){
-        exp.setArea(exp.getArea());
-        exp.setDescripcion(exp.getDescripcion());
-        exp.setFin(exp.getFin());
-        exp.setInicio(exp.getInicio());
-        exp.setTitulo(exp.getTitulo());
-        expServ.save(exp);
-        return new ResponseEntity(new Mensaje("Proyecto modificado"), HttpStatus.OK);
+    @PutMapping("/editar/{id}")
+    public ResponseEntity<?> update(@RequestBody Experiencia exp) {
+            expServ.editEducacion(exp);
+            return new ResponseEntity(new Mensaje("Experiencia modificada"), HttpStatus.OK);
+        }
     }
-    
-    
-}

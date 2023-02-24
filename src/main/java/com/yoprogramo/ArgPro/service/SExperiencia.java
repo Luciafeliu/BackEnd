@@ -33,6 +33,9 @@ public class SExperiencia {
     expRepo.save(exp);
     }
    
+    public void editEducacion(Experiencia exp) {
+        expRepo.save(exp);
+   }
     
     public void delete (int id){
     expRepo.deleteById(id);

@@ -33,10 +33,20 @@ public class SEstudio {
      public Optional<Estudio> getOne(int id) {
     return estudioRepo.findById(id);
     }
+     
+     
+     public boolean existsByTitulo(String titulo){
+       return estudioRepo.existsByTitulo(titulo);
+   }
    
     public void crearEstudio(Estudio est){
     estudioRepo.save(est);
     }
+    
+    public void editEducacion(Estudio est) {
+        estudioRepo.delete(est);
+        estudioRepo.save(est);
+   }
     
     public void save (Estudio exp){
     estudioRepo.save(exp);

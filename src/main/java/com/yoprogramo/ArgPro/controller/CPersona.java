@@ -42,17 +42,6 @@ public class CPersona {
         return new ResponseEntity(per, HttpStatus.OK);
     } 
     
-    /*@PostMapping("/crear")
-    public String agregarPersona (@RequestBody Persona per){
-        persoServ.crearPersona(per);
-        return "La persona fue creada correctamente";
-    }
-    
-    @DeleteMapping("/borrar/{id}")
-    public String eliminarPersona(@PathVariable int id){
-        persoServ.borrarPersona(id);
-        return "La persona fue eliminada correctamente";
-    }*/
     
     @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id")int id, @RequestBody DtoPersona dtopersona){
