@@ -5,7 +5,6 @@ com\yoprogramo\ArgPro\controller\CBanner.class
 com\yoprogramo\ArgPro\controller\CEstudio.class
 com\yoprogramo\ArgPro\security\repository\iRolRepository.class
 com\yoprogramo\ArgPro\controller\CProyecto.class
-com\yoprogramo\ArgPro\security\dto\DtoEstudio.class
 com\yoprogramo\ArgPro\repository\RPersona.class
 com\yoprogramo\ArgPro\entity\Experiencia.class
 com\yoprogramo\ArgPro\entity\Estudio.class
@@ -34,6 +33,7 @@ com\yoprogramo\ArgPro\security\MainSecurity.class
 com\yoprogramo\ArgPro\controller\CExperiencia.class
 com\yoprogramo\ArgPro\security\service\UserDetailsImpl.class
 com\yoprogramo\ArgPro\security\service\UsuarioService.class
+com\yoprogramo\ArgPro\dto\DtoEstudio.class
 com\yoprogramo\ArgPro\security\service\RolService.class
 com\yoprogramo\ArgPro\security\entity\UsuarioPrincipal.class
 com\yoprogramo\ArgPro\repository\RHabilidad.class

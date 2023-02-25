@@ -28,7 +28,6 @@ C:\Users\feliu\OneDrive\Escritorio\Argentina Programa\PortfolioBackEnd\ArgPro\sr
 C:\Users\feliu\OneDrive\Escritorio\Argentina Programa\PortfolioBackEnd\ArgPro\src\main\java\com\yoprogramo\ArgPro\security\service\UserDetailsImpl.java
 C:\Users\feliu\OneDrive\Escritorio\Argentina Programa\PortfolioBackEnd\ArgPro\src\main\java\com\yoprogramo\ArgPro\entity\Persona.java
 C:\Users\feliu\OneDrive\Escritorio\Argentina Programa\PortfolioBackEnd\ArgPro\src\main\java\com\yoprogramo\ArgPro\security\entity\Usuario.java
-C:\Users\feliu\OneDrive\Escritorio\Argentina Programa\PortfolioBackEnd\ArgPro\src\main\java\com\yoprogramo\ArgPro\security\dto\DtoEstudio.java
 C:\Users\feliu\OneDrive\Escritorio\Argentina Programa\PortfolioBackEnd\ArgPro\src\main\java\com\yoprogramo\ArgPro\ArgProApplication.java
 C:\Users\feliu\OneDrive\Escritorio\Argentina Programa\PortfolioBackEnd\ArgPro\src\main\java\com\yoprogramo\ArgPro\security\entity\UsuarioPrincipal.java
 C:\Users\feliu\OneDrive\Escritorio\Argentina Programa\PortfolioBackEnd\ArgPro\src\main\java\com\yoprogramo\ArgPro\repository\RFooter.java
@@ -40,6 +39,7 @@ C:\Users\feliu\OneDrive\Escritorio\Argentina Programa\PortfolioBackEnd\ArgPro\sr
 C:\Users\feliu\OneDrive\Escritorio\Argentina Programa\PortfolioBackEnd\ArgPro\src\main\java\com\yoprogramo\ArgPro\security\dto\JwtDto.java
 C:\Users\feliu\OneDrive\Escritorio\Argentina Programa\PortfolioBackEnd\ArgPro\src\main\java\com\yoprogramo\ArgPro\security\jwt\JwtTokenFilter.java
 C:\Users\feliu\OneDrive\Escritorio\Argentina Programa\PortfolioBackEnd\ArgPro\src\main\java\com\yoprogramo\ArgPro\security\dto\NuevoUsuario.java
+C:\Users\feliu\OneDrive\Escritorio\Argentina Programa\PortfolioBackEnd\ArgPro\src\main\java\com\yoprogramo\ArgPro\dto\DtoEstudio.java
 C:\Users\feliu\OneDrive\Escritorio\Argentina Programa\PortfolioBackEnd\ArgPro\src\main\java\com\yoprogramo\ArgPro\controller\CPersona.java
 C:\Users\feliu\OneDrive\Escritorio\Argentina Programa\PortfolioBackEnd\ArgPro\src\main\java\com\yoprogramo\ArgPro\security\repository\iUsuarioRepository.java
 C:\Users\feliu\OneDrive\Escritorio\Argentina Programa\PortfolioBackEnd\ArgPro\src\main\java\com\yoprogramo\ArgPro\service\SEstudio.java
