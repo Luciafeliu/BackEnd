@@ -33,6 +33,12 @@ public class CPersona {
     return new ResponseEntity(list, HttpStatus.OK);
     }
     
+    @PostMapping("/crear")
+    public ResponseEntity<?> create(@RequestBody Persona per){
+        persoServ.crearPersona(per);
+        return new ResponseEntity(new Mensaje("Persona creada"), HttpStatus.OK);
+    }
+    
     @GetMapping("/detail/{id}")
     @ResponseBody
     public ResponseEntity<Persona> getById(@PathVariable("id")int id){
